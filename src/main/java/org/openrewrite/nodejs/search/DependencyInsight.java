@@ -43,9 +43,11 @@ public class DependencyInsight extends ScanningRecipe<AtomicReference<NodeResolu
     String namePattern;
 
     @Option(displayName = "Version",
-            description = "Match only dependencies with the specified version. " +
-                          "Node-style [version selectors](https://docs.openrewrite.org/reference/dependency-version-selectors) may be used." +
-                          "All versions are searched by default.",
+            description = """
+                          Match only dependencies with the specified version. \
+                          Node-style [version selectors](https://docs.openrewrite.org/reference/dependency-version-selectors) may be used.\
+                          All versions are searched by default.\
+                          """,
             example = "1.x",
             required = false)
     @Nullable

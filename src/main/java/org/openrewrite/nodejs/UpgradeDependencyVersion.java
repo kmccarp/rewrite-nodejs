@@ -34,8 +34,10 @@ public class UpgradeDependencyVersion extends Recipe {
     String namePattern;
 
     @Option(displayName = "Version",
-            description = "Set the version to upgrade to." +
-                          "Node-style [version selectors](https://docs.openrewrite.org/reference/dependency-version-selectors) may be used.",
+            description = """
+                          Set the version to upgrade to.\
+                          Node-style [version selectors](https://docs.openrewrite.org/reference/dependency-version-selectors) may be used.\
+                          """,
             example = "1.x")
     String version;
 
