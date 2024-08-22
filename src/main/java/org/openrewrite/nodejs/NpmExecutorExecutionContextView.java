@@ -27,8 +27,8 @@ public class NpmExecutorExecutionContextView extends DelegatingExecutionContext 
     }
 
     public static NpmExecutorExecutionContextView view(ExecutionContext ctx) {
-        if (ctx instanceof NpmExecutorExecutionContextView) {
-            return (NpmExecutorExecutionContextView) ctx;
+        if (ctx instanceof NpmExecutorExecutionContextView view) {
+            return view;
         }
         return new NpmExecutorExecutionContextView(ctx);
     }
